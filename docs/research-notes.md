@@ -75,3 +75,13 @@ Agent Bar 最像三类系统的交叉：
 3. 一个本地 ingestion API。
 4. 一个 agent activity stream。
 5. 一个可展开详情面板，用来查看 trace、任务、产物和人工介入点。
+
+## References
+
+- ActivityWatch architecture: https://docs.activitywatch.net/en/latest/architecture.html
+- ActivityWatch data model: https://docs.activitywatch.net/en/latest/buckets-and-events.html
+- OpenHands repository: https://github.com/OpenHands/OpenHands
+- Langfuse repository: https://github.com/langfuse/langfuse
+- Flowise repository: https://github.com/FlowiseAI/Flowise
+- Tauri architecture: https://v2.tauri.app/concept/architecture/
+- Electron BrowserWindow API: https://www.electronjs.org/docs/latest/api/browser-window
