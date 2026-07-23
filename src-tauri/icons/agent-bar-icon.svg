@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Agent Bar</title>
+  <rect width="512" height="512" rx="72" fill="#151613"/>
+  <rect x="52" y="52" width="408" height="408" rx="56" fill="#72d6a5"/>
+  <path d="M92 282h72l28-112 48 190 42-142 28 64h110" fill="none" stroke="#151613" stroke-width="30" stroke-linecap="square" stroke-linejoin="miter"/>
+  <rect x="323" y="103" width="88" height="30" fill="#151613"/>
+  <rect x="307" y="133" width="120" height="94" fill="#f4d2ae"/>
+  <rect x="307" y="133" width="30" height="62" fill="#151613"/>
+  <rect x="337" y="163" width="18" height="18" fill="#151613"/>
+  <rect x="385" y="163" width="18" height="18" fill="#151613"/>
+  <rect x="349" y="201" width="36" height="12" fill="#151613"/>
+</svg>

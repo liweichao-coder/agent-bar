@@ -1,0 +1,35 @@
+{
+  "description": "Send privacy-minimized Codex lifecycle metadata to the local Agent Bar event log.",
+  "hooks": {
+    "SessionStart": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5, "statusMessage": "Updating Agent Bar" }] }
+    ],
+    "UserPromptSubmit": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5 }] }
+    ],
+    "PreToolUse": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5 }] }
+    ],
+    "PermissionRequest": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5 }] }
+    ],
+    "PostToolUse": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5 }] }
+    ],
+    "PreCompact": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5 }] }
+    ],
+    "PostCompact": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5 }] }
+    ],
+    "SubagentStart": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5 }] }
+    ],
+    "SubagentStop": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5 }] }
+    ],
+    "Stop": [
+      { "matcher": ".*", "hooks": [{ "type": "command", "command": "node integrations/codex/agent-bar-hook.mjs", "timeout": 5 }] }
+    ]
+  }
+}

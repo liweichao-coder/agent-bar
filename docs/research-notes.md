@@ -60,6 +60,41 @@
 - Agent Bar 的首屏不是 workflow builder，而是“状态条 + 当天安排 + 实时活动”。
 - 节点编辑器可以作为高级面板，不应该压过常驻 bar 的轻量体验。
 
+## Marvis
+
+定位：腾讯的操作系统级 AI 助手，预置负责调度、文件、系统、应用、浏览器和搜索的多个 Agent。
+
+值得借鉴：
+
+- 用一个简化的虚拟办公室表达多 Agent 分工，角色在空闲、工作和等待时有不同动作。
+- 将 Agent 抽象为容易理解的岗位，而不是直接向普通用户展示 trace 和日志。
+- 办公室旁同时显示任务进度、运行状态和消耗信息，让动画与真实工作状态有关联。
+- 涉及系统修改等操作时保留人工确认。
+
+不直接照搬：
+
+- 公开体验资料显示办公室更偏状态展示，交互和控制能力有限。
+- 固定的六种 Agent 角色适合开箱即用产品，但 Agent Bar 需要支持外部 Agent 动态接入。
+- Agent Bar 不应承担完整的操作系统助手能力，时间管理与可观察调度才是主线。
+
+## Pixel Agents
+
+定位：将 Claude Code 等终端 Agent 映射成像素办公室角色的开源 VS Code 扩展和独立 Web 应用。
+
+值得借鉴：
+
+- 已实现角色行走、坐到工位、阅读、输入、等待授权、完成提示和子 Agent 可视化。
+- 使用 Claude Code Hooks 获取 Session、Tool、Permission 和 Subagent 事件，并提供 JSONL 轮询降级方案。
+- 用统一 AgentEvent、Provider adapter、HTTP/WebSocket 服务隔离具体 Agent 与可视化层。
+- 前端采用 React + Canvas 2D，游戏状态由独立状态机管理，并使用 BFS 寻路。
+- 证明 2D 虚拟办公室不需要 3D 引擎也能有效表达 Agent 活动。
+
+需要补足：
+
+- 当前主要是观察 Claude Code，Codex 等适配仍在路线图中。
+- 状态推断在缺少官方 Hook 时会误判，Agent Bar 需要显式展示数据可信度和连接能力。
+- 它没有日程、时间统计和人的活动轨道，这正是 Agent Bar 的主要差异。
+
 ## Early Conclusion
 
 Agent Bar 最像三类系统的交叉：
@@ -83,5 +118,7 @@ Agent Bar 最像三类系统的交叉：
 - OpenHands repository: https://github.com/OpenHands/OpenHands
 - Langfuse repository: https://github.com/langfuse/langfuse
 - Flowise repository: https://github.com/FlowiseAI/Flowise
+- Marvis website: https://marvis.qq.com/
+- Pixel Agents repository: https://github.com/pixel-agents-hq/pixel-agents
 - Tauri architecture: https://v2.tauri.app/concept/architecture/
 - Electron BrowserWindow API: https://www.electronjs.org/docs/latest/api/browser-window
