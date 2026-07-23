@@ -89,8 +89,6 @@ Tauri 模式的数据保存在系统应用数据目录下的 `agent-bar.sqlite3`
 - [docs/research-notes.md](docs/research-notes.md): 相近开源项目观察。
 - [docs/architecture-sketch.md](docs/architecture-sketch.md): 初步架构草图和技术候选。
 - [docs/CURRENT_STATE.md](docs/CURRENT_STATE.md): 当前已实现能力、验证基线、边界与下一迭代。
-- [docs/NEW_COMPUTER_SETUP.md](docs/NEW_COMPUTER_SETUP.md): 在另一台电脑恢复开发环境和本地上下文。
-- [docs/NEW_COMPUTER_CODEX_PROMPT.md](docs/NEW_COMPUTER_CODEX_PROMPT.md): 新电脑上可直接交给 Codex 的接手提示词。
 - [docs/iterations/0001-local-vertical-slice.md](docs/iterations/0001-local-vertical-slice.md): 第一代本地纵向闭环实现与验证。
 - [docs/iterations/0002-codex-observer.md](docs/iterations/0002-codex-observer.md): 真实 Codex 任务观察器实现与验证。
 - [docs/iterations/0003-codex-hook-events.md](docs/iterations/0003-codex-hook-events.md): 隐私最小化 Hooks 事件与 SQLite 状态覆盖。

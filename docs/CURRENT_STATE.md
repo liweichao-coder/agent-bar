@@ -124,5 +124,3 @@ After that slice, the next product decisions are:
 - `docs/research-notes.md`: comparable products and repositories.
 - `docs/learning-roadmap.md`: concepts worth understanding for interviews.
 - `docs/iterations/`: implementation and verification evidence by iteration.
-- `docs/NEW_COMPUTER_SETUP.md`: machine migration checklist.
-- `docs/NEW_COMPUTER_CODEX_PROMPT.md`: ready-to-use Codex handoff prompt.
