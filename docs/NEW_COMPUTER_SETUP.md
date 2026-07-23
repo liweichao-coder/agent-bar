@@ -25,7 +25,16 @@ cargo --version
 codex --version
 ```
 
-## 2. Clone the repository
+## 2. Choose a recovery path
+
+The simplest option is to open Codex on the new computer and paste the entire
+prompt from `docs/NEW_COMPUTER_CODEX_PROMPT.md`. That prompt checks the machine,
+clones the repository, installs project dependencies, restores context, and
+runs the validation baseline.
+
+To clone manually instead, continue with the steps below.
+
+## 3. Clone the repository
 
 ```powershell
 git clone git@github.com:liweichao-coder/agent-bar.git
@@ -36,7 +45,7 @@ npm install
 If SSH is not configured on the new computer, use the repository HTTPS clone
 address or configure a new SSH key first.
 
-## 3. Verify the project
+## 4. Verify the project
 
 ```powershell
 npm test
@@ -56,7 +65,7 @@ npm run tauri dev
 
 The web development server uses `http://127.0.0.1:1420/`.
 
-## 4. Restore Codex context
+## 5. Restore Codex context
 
 Open the cloned repository as a Codex project. Start a new task and paste the
 contents of `docs/NEW_COMPUTER_CODEX_PROMPT.md`.
@@ -74,7 +83,7 @@ Checked-in context is more reliable than depending on an old conversation.
 Personal Codex configuration or reusable skills may be copied separately, but
 they are not required to understand this repository.
 
-## 5. Optional local data
+## 6. Optional local data
 
 The repository intentionally does not contain:
 
@@ -90,7 +99,7 @@ To continue with the same demo data, copy
 it to GitHub. Calendar connections must be authorized again because their
 secrets are machine-local.
 
-## 6. Before continuing development
+## 7. Before continuing development
 
 Run `git status` and confirm the worktree is clean. Then ask Codex to inspect the
 repository and report the fresh test result before editing. This catches toolchain
